@@ -1,0 +1,163 @@
+// Create variables for all the KEYS. For example
+// var keyC = createSprite(27,200,57,200);
+
+
+var keyc = createSprite(27, 200, 27, 200);
+var keyd = createSprite(75, 200, 27, 200);
+var keye = createSprite(123, 200, 27, 200);
+var keyf = createSprite(171, 200, 27, 200);
+var keyg = createSprite(219, 200, 27, 200);
+var keya = createSprite(267, 200, 27, 200);
+var keyb = createSprite(315, 200, 27, 200);
+
+var c = createSprite(51, 150, 15, 100);
+var d = createSprite(99, 150, 15, 100);
+var f = createSprite(147, 150, 15, 100);
+var g = createSprite(195, 150, 15, 100);
+var a = createSprite(243, 150, 15, 100);
+function draw() {
+  background("red");
+  // background("red");
+  
+  
+  keyc.shapeColor = "white";
+  keyd.shapeColor = "white";
+  keye.shapeColor = "white";
+  keyf.shapeColor = "white";
+  keyg.shapeColor = "white";
+  keya.shapeColor = "white";
+  keyb.shapeColor = "white";
+  
+  // We will be creating just one octave. 
+  // To do so we will need 7 white keys C D E F G A B
+  // and 5 black keys. c# d# f# g# a#
+  //add example
+  
+  // BONUS POINTS if you can set put up a text on top each key
+  
+  
+  //Write an if condition to play the note when sprite key is pressed
+  //if(condition that sprite key is pressed){
+  //  play the note
+  //  }
+  
+  // THE ONLY THING LEFT IS....?
+  // Is the mouse pressed over or not.
+  // If so... PlaySound for the specific KEY!!!!
+  
+  // Do the same for all 7 White KEYS
+  
+  // AND Black KEYS.
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("C", 20, 325);
+  
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("D",67,325);
+  
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("E",115,325);
+  
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("F",163,325);
+  
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("G",211,325);
+   
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("A",259,325);
+  
+  fill("white");
+  textFont("Algerian");
+  textSize(25);
+  text("B",307,325);
+  
+  fill("black");
+  textFont("Algerian");
+  textSize(25);
+  text("c#",45,88);
+  
+  fill("black");
+  textFont("Algerian");
+  textSize(25);
+  text("d#",90,88);
+  
+  fill("black");
+  textFont("Algerian");
+  textSize(25);
+  text("f#",135,88);
+  
+  fill("black");
+  textFont("Algerian");
+  textSize(25);
+  text("g#",180,88);
+  
+  fill("black");
+  textFont("Algerian");
+  textSize(25);
+  text("a#",225,88);
+  
+  if(mousePressedOver(keyc)){
+    playSound("piano_middle_C.mp3");
+  }
+  
+  if(mousePressedOver(keyd)){
+    playSound("piano_D.mp3");
+  }
+  
+  if(mousePressedOver(keye)){
+    playSound("piano_E.mp3");
+  }
+  
+  if(mousePressedOver(keyf)){
+    playSound("piano_F.mp3");
+  }
+  
+  if(mousePressedOver(keyg)){
+    playSound("piano_G.mp3");
+  }
+  
+  if(mousePressedOver(keya)){
+    playSound("piano_A.mp3");
+  }
+  
+  if(mousePressedOver(keyb)){
+    playSound("piano_B.mp3");
+  }
+  
+  if(mousePressedOver(c)){
+    playSound("piano_C_sharp.mp3");
+  }
+  
+  if(mousePressedOver(d)){
+    playSound("piano_D_sharp.mp3");
+  }
+  
+  if(mousePressedOver(f)){
+    playSound("piano_F_sharp.mp3");
+  }
+  
+  if(mousePressedOver(g)){
+    playSound("piano_G_sharp.mp3");
+  }
+  
+  if(mousePressedOver(a)){
+    playSound("piano_A_sharp.mp3");
+  }
+  
+  
+  
+  drawSprites();
+  
+}
